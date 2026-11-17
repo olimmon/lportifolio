@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Limmon | Editor de Vídeo & Imagens</title>
+  <meta name="description" content="Portfólio de Limmon — edição de vídeos e imagens com foco em gameplay e humor. CapCut, DaVinci Resolve, Filmora, Photoshop e PixelLab." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <a href="#destaques" class="logo" data-aba="destaques">LIMMON</a>
+    <nav class="nav">
+      <button class="nav-btn ativo" data-aba="destaques">Destaques</button>
+      <button class="nav-btn" data-aba="projetos">Projetos</button>
+      <button class="nav-btn" data-aba="ferramentas">Ferramentas</button>
+      <button class="nav-btn" data-aba="contato">Contato</button>
+      <button class="nav-btn" data-aba="sobre">Sobre</button>
+    </nav>
+    <button class="menu-toggle" aria-label="Menu">☰</button>
+  </header>
+
+  <main>
+
+    <section id="destaques" class="aba ativa">
+      <div class="hero">
+        <div class="hero-overlay">
+          <img src="imagens/icon.jpg" alt="Limmon" class="foto-perfil" />
+          <h1>Edição de <span>vídeos</span> e <span>imagens</span></h1>
+          <p>Vídeos, Thumbnails, Pôsteres e conteúdo para todo tipo de criador.</p>
+          <button class="btn" data-aba="projetos">Ver todos os projetos</button>
+        </div>
+      </div>
+      <div class="conteudo">
+        <h2>Projetos em Destaque</h2>
+        <p class="section-sub">Uma seleção dos melhores trabalhos</p>
+        <div class="grid-projetos" id="grid-destaques"></div>
+      </div>
+    </section>
+
+    <section id="projetos" class="aba">
+      <div class="conteudo">
+        <h2>Todos os Projetos</h2>
+        <p class="section-sub">Todas as edições de gameplay e humor</p>
+        <div class="grid-projetos" id="grid-projetos"></div>
+      </div>
+    </section>
+
+    <section id="ferramentas" class="aba">
+      <div class="conteudo">
+        <h2>Ferramentas Utilizadas</h2>
+        <p class="section-sub">Softwares que uso no dia a dia para editar vídeos e imagens</p>
+        <div class="lista-ferramentas">
+          <div class="ferramenta-card">
+            <img src="imagens/icones/capcut.png" alt="CapCut" class="ferramenta-icone" />
+            <h3>CapCut</h3>
+            <p>Edição rápida de vídeos para redes sociais, com cortes, legendas e efeitos.</p>
+          </div>
+          <div class="ferramenta-card">
+            <img src="imagens/icones/davinciresolve.png" alt="DaVinci Resolve" class="ferramenta-icone" />
+            <h3>DaVinci Resolve</h3>
+            <p>Edição profissional, color grading e finalização de projetos mais elaborados.</p>
+          </div>
+          <div class="ferramenta-card">
+            <img src="imagens/icones/filmora.png" alt="Filmora 10" class="ferramenta-icone" />
+            <h3>Filmora 10</h3>
+            <p>Edição com efeitos, transições e recursos criativos para gameplay e humor.</p>
+          </div>
+          <div class="ferramenta-card">
+            <img src="imagens/icones/photoshop.png" alt="Photoshop" class="ferramenta-icone" />
+            <h3>Photoshop</h3>
+            <p>Criação e tratamento de thumbnails, artes e imagens para os vídeos.</p>
+          </div>
+          <div class="ferramenta-card">
+            <img src="imagens/icones/pixelab.png" alt="PixelLab" class="ferramenta-icone" />
+            <h3>PixelLab</h3>
+            <p>Edição de imagens e artes no celular, com foco em conteúdo para redes sociais.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="aba">
+      <div class="conteudo">
+        <h2>Contato</h2>
+        <p class="section-sub">Me manda um E-mail pelo formulário ou pelo link, respondo o mais rápido possível</p>
+        <div class="contato-grid">
+          <div class="contato-info">
+            <a href="mailto:limmoneditor@gmail.com" class="contato-bloco">
+              <img src="imagens/icones/gmail.png" alt="E-mail" class="contato-icone-img" />
+              <div>
+                <h3>E-mail</h3>
+                <span>limmoneditor@gmail.com</span>
+              </div>
+            </a>
+            <a href="https://x.com/editorLimmon" target="_blank" rel="noopener" class="contato-bloco">
+              <img src="imagens/icones/x.png" alt="X (Twitter)" class="contato-icone-img" />
+              <div>
+                <h3>X (Twitter)</h3>
+                <span>@editorLimmon</span>
+              </div>
+            </a>
+            <a href="https://www.youtube.com/@oLimmon" target="_blank" rel="noopener" class="contato-bloco">
+              <img src="imagens/icones/youtube.png" alt="YouTube" class="contato-icone-img" />
+              <div>
+                <h3>YouTube</h3>
+                <span>@oLimmon</span>
+              </div>
+            </a>
+            <div class="contato-disponibilidade">
+              <span class="ponto-verde"></span>
+              Disponível para novos projetos
+            </div>
+          </div>
+          <form id="form-contato" class="contato-form">
+            <div class="form-linha">
+              <div class="form-grupo">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required />
+              </div>
+              <div class="form-grupo">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com" required />
+              </div>
+            </div>
+            <div class="form-grupo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Conte sobre seu projeto, prazo e referências..." required></textarea>
+            </div>
+            <button type="submit" class="btn">Enviar mensagem</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="aba">
+      <div class="conteudo">
+        <div class="sobre-topo">
+          <img src="imagens/icon.jpg" alt="Limmon" class="foto-perfil" />
+          <h2>Sobre mim</h2>
+        </div>
+        <p>Eaí, eu sou o <strong>Limmon</strong>! Sou editor de vídeo e imagem, sempre cresci assistindo canais de humor e gameplay como <strong>Saiko</strong>, <strong>Orochinho</strong> e <strong>Games Eduu</strong> e foi isso que me inspirou a entrar no ramo.</p>
+        <p>Edito vídeos e fotos de forma casual há cerca de <strong>6 anos</strong>, e também faço <strong>edições de imagem</strong> para a internet no geral. Ainda estou ganhando experiência, mas cada projeto é uma chance de evoluir e deixar o conteúdo com a minha identidade.</p>
+        <div class="sobre-cta">
+          <p>Quer trocar uma ideia ou fechar um projeto? <strong>Me chama no contato</strong> respondo o mais rápido possível.</p>
+          <button class="btn" data-aba="contato">Ir para o contato</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Limmon - Editor de Vídeo & Imagens</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
